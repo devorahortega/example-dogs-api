@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+  def index
+    dog = Dog.all
+    render json: dog.as_json
+  end
+
   def create
     user = User.new(
       name: params[:name],
