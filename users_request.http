@@ -18,3 +18,14 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
+
+### User creates a Dog
+POST http://localhost:3000/dogs.json
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTYzNjV9.wFx1ktrqRAUzgEuVAcordkX_f_ck3JoVtZfvWNkGMqg
+Content-Type: application/json 
+
+{
+  "name": "Buddy",
+  "age": "5",
+  "Breed": "Husky"
+}
